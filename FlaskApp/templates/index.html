@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Alpha Phi Sigma</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{url_for('static', filename='css/agency.css')}}" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Casa</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Facilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Bienvenido a la fraternidad:</div>
+          <div class="intro-heading">Alpha Phi Sigma</div>
+          <a class="btn btn-xl js-scroll-trigger" href="#services">Que Somos?</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Lo que somos</h2>
+            <h3 class="section-subheading text-muted">Conoce nuestro Servicio:</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-thumbs-o-up fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Historia</h4>
+            <p class="text-muted">La Fraternidad Alpha Phi Sigma fue fundada para el año 1932 bajo los principios de Amistad-Fraternal-Siempre.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Servicio</h4>
+            <p class="text-muted">El servicio de esta fraternidad cuenta con el alquiler de sus facilidades para actividades familiares entre otras.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-university fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Nuestra Organización</h4>
+            <p class="text-muted">Esta fraternidad es una organización sin fines de lucro para el bienestar de la comunidad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilidades -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Facilidades</h2>
+            <h3 class="section-subheading text-muted">Visita nuestras facilidades!</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{{url_for('static', filename='img/salon.jpg')}}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Salon de actividades</h4>
+              <p class="text-muted">Click!</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+                  <img class="img-fluid" src="{{url_for('static', filename='img/piscinaofi.jpg')}}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Piscina</h4>
+              <p class="text-muted">Click!</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{{url_for('static', filename='img/picnic1.jpg')}}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Area de Picnic</h4>
+              <p class="text-muted">Click!</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{{url_for('static', filename='img/parking1.jpg')}}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Estacionamiento</h4>
+              <p class="text-muted">Click!</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{{url_for('static', filename='img/gazeboBBQ.jpg')}}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Gazebo BBQ</h4>
+              <p class="text-muted">Click!</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{{url_for('static', filename='img/cancha1.jpg')}}" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Cancha</h4>
+              <p class="text-muted">Click!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Nosotros</h2>
+            <h3 class="section-subheading text-muted">Conoce más sobre nuestra historia!</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Comienzos</h4>
+                    <h4 class="subheading"></h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">La Fraternidad Alpha Phi Sigma comenzó para el año 1932, solian reunirse un grupo de jóvenes en las aceras norte y sur de la Avenida Ponce de León en la parada 20 en Santurce. Esto causó que se formara el club "Patria" entre quince amigos estudiantes de la acera norte.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4></h4>
+                    <h4 class="subheading"></h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Poco tiempo después, el grupo de la acera sur hizo lo mismo. Ambos grupos tenian buena relación y así nació la Fraternidad Alpha Phi Sigma bajo los principios de Amistad-Fraternal-Siempre.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4></h4>
+                    <h4 class="subheading"></h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Luego de ir moviéndose de lugar en lugar de sus familiares para sus reuniones, consiguieron un local en Cataño el cual luego de mucho esfuerzo llegó a tener estacionamiento, liga de softball, cancha de baloncesto, salón de actividades y hasta una piscina.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4></h4>
+                    <h4 class="subheading"></h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Finalmente, tuvieron que desalojar el local de Cataño debido a la construcción de una escuela. De ahí volvieron a buscar una finca y consiguieron esta en donde nos encontramos actualmente, en el Barrio Mamey de Guaynabo, desde la década de los 1960.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Se Parte
+                    <br>de nuestra
+                    <br>Historia!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Equipo</h2>
+            <h3 class="section-subheading text-muted">Conoce nuestro equipo!</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="" alt="">
+              <h4>Hector Laureano</h4>
+              <p class="text-muted">LLENAR</p>
+              <ul class="list-inline social-buttons">
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="" alt="">
+              <h4>(LLENAR)</h4>
+              <p class="text-muted">LLENAR</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="" alt="">
+              <h4>(LLENAR)</h4>
+              <p class="text-muted">LLENAR</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">A la disponibilidad de toda la comunidad!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Contactanos</h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=Fraternidad%20Alpha%20Phi%20Sigma%2C%20Guaynabo%2C%20Puerto%20Rico&key=AIzaSyBydzjeht59bkCSxM77yxBCISPsi1gjcbU" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5>Nos puedes contactar a los siguientes numeros: </h5><br>
+
+                    (787) 720-6563 <br>
+                    (787) 632-1915 <br>
+                    (787) 504-8003 <br>
+                    <br>
+                    <h5>Emails:</h5>
+                    alfafisigma@gmail.com <br>
+                    hlaureano78@gmail.com
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Alpha Phi Sigma</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a target="_blank" href="https://www.facebook.com/groups/25044723440/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Salon de Actividades</h2>
+                  <p class="item-intro text-muted">Salon de actividades para grupos grandes!</p>
+                  <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/salon2.jpg')}}" alt="">
+                  <p>Salón de actividades para 120 personas en donde incluye las mesas y las sillas!<br>
+                   Salón para Bodas, Seminarios, Cumpleaños, Actividad Social, Graduaciones <br>
+                   con Aire Acondicionado e Internet!
+                 </p>
+                  <ul class="list-inline">
+                    <li>Precio: </li>
+                    <li>Semana:</li>
+                    <li>Fin de Semana:</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Volver atras</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Piscina</h2>
+                  <p class="item-intro text-muted"></p>
+                  <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/piscina2.jpg')}}" alt="">
+                  <p>Amplia piscina para celebrar cumple años o pasadia!</p>
+                  <ul class="list-inline">
+                    <li>Precio:</li>
+                    <li>Semana:</li>
+                    <li>Fin de Semana:</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Volver atras</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Area de Picnic</h2>
+                  <p class="item-intro text-muted"></p>
+                  <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/picnic1.jpg')}}" alt="">
+                  <p>Amplio patio para picnic!</p>
+                  <ul class="list-inline">
+                    <li>Precio:</li>
+                    <li>Semana:</li>
+                    <li>Fin de Semana:</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Volver atras</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Estacionamiento</h2>
+                  <p class="item-intro text-muted">Amplio estacionamiento</p>
+                  <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/parking1.jpg')}}" alt="">
+                  <p>Espacioso estacionamiento para las actividades!</p>
+                  <ul class="list-inline">
+                    <li>(capacidad)</li>
+                    <li>(horario)</li>
+                    <li></li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Volver atras</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Gazebo BBQ</h2>
+                  <p class="item-intro text-muted"></p>
+                  <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/gazeboBBQ.jpg')}}" alt="">
+                  <p>Gazebo de BBQ en el área de la piscina!</p>
+                  <ul class="list-inline">
+                    <li>Precio:</li>
+                    <li>Semana:</li>
+                    <li>Fin de Semana:</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Volver atras</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Cancha de Baloncesto</h2>
+                  <p class="item-intro text-muted"></p>
+                  <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/cancha1.jpg')}}" alt="">
+                  <p>Doble cancha de Baloncesto para actividades!</p>
+                  <ul class="list-inline">
+                    <li>Precio:</li>
+                    <li>Semana:</li>
+                    <li>Fin de Semana:</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Volver atras</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/popper/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{{url_for('static', filename='js/jqBootstrapValidation.js')}}"></script>
+    <script src="{{url_for('static', filename='js/contact_me.js')}}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{url_for('static', filename='js/agency.min.js')}}"></script>
+
+  </body>
+
+</html>
