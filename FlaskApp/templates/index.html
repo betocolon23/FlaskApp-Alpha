@@ -22,6 +22,8 @@
 
     <!-- Custom styles for this template -->
     <link href="{{url_for('static', filename='css/agency.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/main.css')}}" rel="stylesheet">
+
 
   </head>
 
@@ -43,14 +45,14 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Facilidades</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Nosotros</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Equipo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
+              <a class="nav-link js-scroll-trigger" href="{{url_for('contact')}}">Contactanos</a>
             </li>
           </ul>
         </div>
@@ -349,77 +351,9 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Contactanos</h2>
-            <h3 class="section-subheading text-muted"></h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate="novalidate">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <br />
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=Fraternidad%20Alpha%20Phi%20Sigma%2C%20Guaynabo%2C%20Puerto%20Rico&key=AIzaSyBydzjeht59bkCSxM77yxBCISPsi1gjcbU" allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5>Nos puedes contactar a los siguientes numeros: </h5><br>
+    
 
-                    (787) 720-6563 <br>
-                    (787) 632-1915 <br>
-                    (787) 504-8003 <br>
-                    <br>
-                    <h5>Emails:</h5>
-                    alfafisigma@gmail.com <br>
-                    hlaureano78@gmail.com
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- Footer -->
     <footer>
@@ -475,9 +409,12 @@
                    con Aire Acondicionado e Internet!
                  </p>
                   <ul class="list-inline">
-                    <li>Precio: </li>
-                    <li>Semana:</li>
-                    <li>Fin de Semana:</li>
+                    <li>Lunes-Jueves: $800.00 </li>
+                    <li>Viernes y Sábado: $950.00</li>
+                    <li>Domingo: $850.00</li>
+                    <li>Hora adicional: $165.00</li>
+                    <li>Limpieza (antes y después): $75.00</li>
+                    <li>Seguridad: $70.00</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -508,10 +445,15 @@
                   <p class="item-intro text-muted"></p>
                   <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/piscina2.jpg')}}" alt="">
                   <p>Amplia piscina para celebrar cumple años o pasadia!</p>
+                  <p>Horario: 9am - 7pm</p>
                   <ul class="list-inline">
-                    <li>Precio:</li>
-                    <li>Semana:</li>
-                    <li>Fin de Semana:</li>
+                      <li>Lunes-Jueves: $650.00 </li>
+                      <li>Viernes y Sábado: $825.00</li>
+                      <li>Domingo: $700.00</li>
+                      <li>Hora adicional: $100.00</li>
+                      <li>Limpieza (antes y después): $50.00</li>
+                      <li>Seguridad: $70.00</li>
+                      <li>Salvavidas: $100.00</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -543,9 +485,7 @@
                   <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/picnic1.jpg')}}" alt="">
                   <p>Amplio patio para picnic!</p>
                   <ul class="list-inline">
-                    <li>Precio:</li>
-                    <li>Semana:</li>
-                    <li>Fin de Semana:</li>
+                    <li>Ccontactanos para más información.</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -577,9 +517,7 @@
                   <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/parking1.jpg')}}" alt="">
                   <p>Espacioso estacionamiento para las actividades!</p>
                   <ul class="list-inline">
-                    <li>(capacidad)</li>
-                    <li>(horario)</li>
-                    <li></li>
+                    <li>Ccontactanos para más información.</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -611,9 +549,7 @@
                   <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/gazeboBBQ.jpg')}}" alt="">
                   <p>Gazebo de BBQ en el área de la piscina!</p>
                   <ul class="list-inline">
-                    <li>Precio:</li>
-                    <li>Semana:</li>
-                    <li>Fin de Semana:</li>
+                    <li>Ccontactanos para más información.</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -645,9 +581,7 @@
                   <img class="img-fluid d-block mx-auto" src="{{url_for('static', filename='img/cancha1.jpg')}}" alt="">
                   <p>Doble cancha de Baloncesto para actividades!</p>
                   <ul class="list-inline">
-                    <li>Precio:</li>
-                    <li>Semana:</li>
-                    <li>Fin de Semana:</li>
+                    <li>Ccontactanos para más información.</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
