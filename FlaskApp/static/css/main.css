@@ -11,8 +11,6 @@
   widows: 400px;
 }
 
-
-
 /* Contact form */
 form label {
     font-size: 1.2em;
@@ -33,7 +31,7 @@ form label {
     border: 1px solid #cccccc;
     padding: 5px;
     font-size: 1.1em;
-    color: #fafafa;
+    color: black;
   }
    
   form textarea#message {
